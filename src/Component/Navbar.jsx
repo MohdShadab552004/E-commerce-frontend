@@ -71,7 +71,7 @@ function Navbar() {
     const timeline1 = gsap.timeline();
     if (isprofile) {
       timeline1.to(profile.current, {
-        visibility: "visible",
+        visibility: "flex",
         opacity: 1,
         right: 0,
         duration: 0.5
@@ -83,7 +83,7 @@ function Navbar() {
       });
     } else {
       timeline1.to(profile.current, {
-        display:"hidden",
+        display:"none",
         duration: 1,
         right: "-30%",
       });
